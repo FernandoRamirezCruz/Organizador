@@ -1,0 +1,22 @@
+<h1><%= t('tasks.show.title', name: @task.name) %></h1>
+
+<p>
+  <strong><%= t('tasks.show.name') %>:</strong>
+  <%= @task.name %>
+</p>
+
+<p>
+  <strong><%= t('tasks.show.description') %>:</strong>
+  <%= @task.description %>
+</p>
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @task %>
+
+<div>
+  <%= link_to t('tasks.show.edit'), edit_task_path(@task) %> |
+  <%= link_to t('tasks.show.back'), tasks_path %>
+
+  <%= button_to t('tasks.show.destroy'), @task, method: :delete %>
+</div>

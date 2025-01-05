@@ -1,0 +1,12 @@
+<% content_for :title, "Editing task" %>
+
+<h1><%= t('tasks.edit.title', name: @task.name) %></h1>
+
+<%= render 'form', task: @task %>
+
+<br>
+
+<div>
+  <%= link_to t('tasks.edit.show'), @task %> |
+  <%= link_to t('tasks.edit.back'), tasks_path %>
+</div>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing category" %>
+
+<h1><%= t('categories.edit.title', name: @category.name) %></h1>
+
+<%= render 'form', category: @category %>
+
+<br>
+
+<div>
+  <%= link_to "Show this category", @category %> |
+  <%= link_to t('categories.edit.back'), categories_path %>
+</div>

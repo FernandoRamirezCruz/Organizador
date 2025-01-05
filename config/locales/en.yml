@@ -1,0 +1,88 @@
+---
+en:
+  active_record:
+    errors:
+      models:
+        category:
+          attributes:
+            description:
+              blank: No puede estar en blanco
+            name:
+              blank: No puede estar en blanco
+    models:
+      category:
+        one: Categoría
+        other: Categorías
+      task:
+        one: Tarea
+        other: Tareas
+  categories:
+    description: Description
+    edit:
+      back: Back
+      title: Title
+    form:
+      description: Description
+      errors: Errors
+      name: Name
+      submit: Submit
+    index:
+      actions: Actions
+      description: Description
+      name: Name
+      new_category: New category
+      show: Show
+      title: Title
+    messages:
+      created: La categoría fue creada exitosamente
+    name: Name
+    new:
+      back: Back
+      title: Title
+    show:
+      back: Back
+      description: Description
+      edit: Edit
+      name: Name
+      title: Title
+  common:
+    actions: Acciones
+    back: Atrás
+    create: Crear
+    description: Descripción
+    name: Nombre
+    title: Título
+  errors:
+    attributes:
+      description:
+        blank: No puede estar en blanco
+      name:
+        blank: No puede estar en blanco
+    messages:
+      blank: No puede estar en blanco
+      invalid_due_date: Invalid due date
+      not_found: No encontrado
+      unauthorized: No autorizado
+  hello: Hello world
+  tasks:
+    edit:
+      back: Back
+      show: Show
+      title: Title
+    index:
+      actions: Actions
+      description: Description
+      name: Name
+      new_task: New task
+      show: Show
+      title: Title
+    new:
+      back: Back
+      title: Title
+    show:
+      back: Back
+      description: Description
+      destroy: Destroy
+      edit: Edit
+      name: Name
+      title: Title

@@ -1,0 +1,11 @@
+<% content_for :title, "New category" %>
+
+<h1><%= t('categories.new.title') %></h1>
+
+<%= render 'form', category: @category %>
+
+<br>
+
+<div>
+  <%= link_to t('categories.new.back'), categories_path %>
+</div>

@@ -1,0 +1,96 @@
+---
+es:
+  date:
+    formats:
+      default: "%d/%m/%Y"
+    day_names: [domingo, lunes, martes, miércoles, jueves, viernes, sábado]
+    abbr_day_names: [dom, lun, mar, mié, jue, vie, sáb]
+    month_names: [~, enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
+    abbr_month_names: [~, ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic]
+    order: [day, month, year]
+  active_record:
+    errors:
+      models:
+        category:
+          attributes:
+            description:
+              blank: No puede estar en blanco
+            name:
+              blank: No puede estar en blanco
+    models:
+      category:
+        one: Categoría
+        other: Categorías
+      task:
+        one: Tarea
+        other: Tareas
+  categories:
+    description: Descripción
+    edit:
+      back: Atrás
+      title: Título
+    form:
+      description: Descripción
+      errors: Errores
+      name: Nombre
+      submit: Enviar
+    index:
+      actions: Acciones
+      description: Descripción
+      name: Nombre
+      new_category: Nueva categoría
+      show: Mostrar
+      title: Título
+    messages:
+      created: La categoría fue creada exitosamente
+    name: Nombre
+    new:
+      back: Atrás
+      title: Título
+    show:
+      back: Atrás
+      description: Descripción
+      edit: Editar
+      name: Nombre
+      title: Título
+  common:
+    actions: Acciones
+    back: Atrás
+    create: Crear
+    description: Descripción
+    name: Nombre
+    title: Título
+  errors:
+    attributes:
+      description:
+        blank: No puede estar en blanco
+      name:
+        blank: No puede estar en blanco
+    messages:
+      blank: No puede estar en blanco
+      invalid_due_date: Fecha de vencimiento inválida
+      not_found: No encontrado
+      unauthorized: No autorizado
+  hello: Hola mundo
+  tasks:
+    edit:
+      back: Atrás
+      show: Mostrar
+      title: Título
+    index:
+      actions: Acciones
+      description: Descripción
+      name: Nombre
+      new_task: Nueva tarea
+      show: Mostrar
+      title: Título
+    new:
+      back: Atrás
+      title: Título
+    show:
+      back: Atrás
+      description: Descripción
+      destroy: Eliminar
+      edit: Editar
+      name: Nombre
+      title: Título
