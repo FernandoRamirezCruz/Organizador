@@ -20,10 +20,18 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <%= button_to 'Cerrar sesión', destroy_user_session_path, method: :delete %>
-    <%= yield %>
+    <%= render 'layouts/navbar' %>
+    <div class="container mt-4 pb-4">
+      <div class="main-flash-messages">
+        <%= render 'layouts/messages' %>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>
