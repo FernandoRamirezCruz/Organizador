@@ -8,7 +8,7 @@ gem 'cocoon'
 gem 'jquery-rails'
 gem 'webpacker'
 gem 'cancancan'
-gem 'font-awesome-sass', '~> 5.12.0'
+gem 'font-awesome-sass', '~> 6.7.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.1"
