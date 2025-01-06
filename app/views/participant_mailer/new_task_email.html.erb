@@ -1,0 +1,15 @@
+<h1>
+  Hola <%= @user.email %>, tienes una nueva tarea
+</h1>
+<p>
+  <b>Nombre:</b> <%= @task.name %>
+</p>
+<p>
+  <b>Descripción:</b> <%= @task.description %>
+</p>
+<p>
+  <b>Categoría:</b> <%= @task.category.name %>
+</p>
+<p>
+  <b>Enlace:</b> <%= link_to @task.code, @task %>
+</p>

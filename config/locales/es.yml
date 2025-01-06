@@ -89,6 +89,7 @@ es:
       title: Título
     show:
       back: Atrás
+      add_note: "Añadir Nota"
       description: Descripción
       destroy: Eliminar
       edit: Editar

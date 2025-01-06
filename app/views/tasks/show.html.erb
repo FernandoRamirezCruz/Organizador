@@ -10,13 +10,24 @@
   <%= @task.description %>
 </p>
 
+<p class="notes-container">
+  <% @task.notes.each do |note| %>
+    <div class="notes">
+      <%= render partial: 'tasks/note', locals: { note: note } %>
+    </div>
+  <% end %>
+  <%= simple_form_for Note.new, url: task_notes_path(task_id: @task.id), remote: true do |f| %>
+    <%= f.input :body, label: false, as: :string, placeholder: 'Digite la nota', input_html: { autocomplete: :off } %>
+    <%= f.submit t('tasks.show.add_note') %>
+  <% end %>
+</p>
+
 <p style="color: green"><%= notice %></p>
 
 <%= render @task %>
 
 <div>
   <%= link_to t('tasks.show.edit'), edit_task_path(@task) %> |
-  <%= link_to t('tasks.show.back'), tasks_path %>
-
+  <%= link_to t('tasks.show.back'), tasks_path %> |
   <%= button_to t('tasks.show.destroy'), @task, method: :delete %>
 </div>
