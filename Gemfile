@@ -8,8 +8,7 @@ gem 'cocoon'
 gem 'jquery-rails'
 gem 'webpacker'
 gem 'cancancan'
-gem 'font-awesome-sass', '~> 5.12.0'
-
+gem 'font-awesome-sass', '~> 5.12.
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -51,6 +50,9 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
@@ -68,5 +70,11 @@ group :development do
   gem 'letter_opener'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'faker'
+  gem 'capybara'
 end
 
