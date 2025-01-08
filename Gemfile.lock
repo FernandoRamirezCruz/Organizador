@@ -90,6 +90,7 @@ GEM
       msgpack (~> 1.2)
     brakeman (6.2.2)
       racc
+    bson (5.0.2)
     builder (3.3.0)
     cancancan (3.6.1)
     capybara (3.40.0)
@@ -202,6 +203,18 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.25.4)
+    mongo (2.21.0)
+      bson (>= 4.14.1, < 6.0.0)
+    mongoid (9.0.3)
+      activemodel (>= 5.1, < 8.1, != 7.0.0)
+      concurrent-ruby (>= 1.0.5, < 2.0)
+      mongo (>= 2.18.0, < 3.0.0)
+    mongoid-compatibility (1.0.0)
+      activesupport
+      mongoid (>= 2.0)
+    mongoid-rspec (4.2.0)
+      mongoid (>= 3.0, < 10.0)
+      mongoid-compatibility (>= 0.5.1)
     msgpack (1.7.5)
     net-imap (0.5.4)
       date
@@ -283,6 +296,10 @@ GEM
       activesupport (= 8.0.1)
       bundler (>= 1.15.0)
       railties (= 8.0.1)
+    rails-controller-testing (1.0.5)
+      actionpack (>= 5.0.1.rc1)
+      actionview (>= 5.0.1.rc1)
+      activesupport (>= 5.0.1.rc1)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -456,12 +473,14 @@ DEPENDENCIES
   jquery-rails
   kamal
   letter_opener
+  mongoid-rspec
   pg (~> 1.1)
   propshaft
   pry
   pry-doc
   puma (>= 5.0)
   rails (~> 8.0.1)
+  rails-controller-testing
   rails-i18n
   rspec-rails
   rubocop-rails-omakase

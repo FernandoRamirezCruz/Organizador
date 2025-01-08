@@ -8,7 +8,8 @@ gem 'cocoon'
 gem 'jquery-rails'
 gem 'webpacker'
 gem 'cancancan'
-gem 'font-awesome-sass', '~> 5.12.
+gem 'font-awesome-sass', '~> 5.12.0'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -64,7 +65,6 @@ group :development, :test do
 
   gem 'pry'
   gem 'pry-doc'
-end
 
 group :development do
   gem 'letter_opener'
@@ -76,5 +76,7 @@ group :test do
   gem 'database_cleaner'
   gem 'faker'
   gem 'capybara'
+  gem 'mongoid-rspec'
+  gem 'rails-controller-testing'
 end
 
